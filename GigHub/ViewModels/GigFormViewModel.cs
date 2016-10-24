@@ -1,7 +1,7 @@
-﻿using System;
+﻿using GigHub.Models;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
-using GigHub.Models;
 
 namespace GigHub.ViewModels
 {
@@ -11,6 +11,7 @@ namespace GigHub.ViewModels
         public string Venue { get; set; }
 
         [Required]
+        [FutureDate]
         public string Date { get; set; }
 
         [Required]
