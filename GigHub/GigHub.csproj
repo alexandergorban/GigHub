@@ -186,6 +186,10 @@
     <Compile Include="Migrations\201610211305106_OverrideConvintionsForGigAndGenres.Designer.cs">
       <DependentUpon>201610211305106_OverrideConvintionsForGigAndGenres.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201610240952271_PopulareGenresTable.cs" />
+    <Compile Include="Migrations\201610240952271_PopulareGenresTable.Designer.cs">
+      <DependentUpon>201610240952271_PopulareGenresTable.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\AccountViewModels.cs" />
     <Compile Include="Models\ApplicationDbContext.cs" />
@@ -286,6 +290,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\201610211305106_OverrideConvintionsForGigAndGenres.resx">
       <DependentUpon>201610211305106_OverrideConvintionsForGigAndGenres.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201610240952271_PopulareGenresTable.resx">
+      <DependentUpon>201610240952271_PopulareGenresTable.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>
