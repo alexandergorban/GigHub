@@ -1,10 +1,10 @@
-﻿using GigHub.Models;
+﻿using AutoMapper;
+using GigHub.Models;
 using Microsoft.AspNet.Identity;
 using System.Collections.Generic;
 using System.Data.Entity;
 using System.Linq;
 using System.Web.Http;
-using AutoMapper;
 
 namespace GigHub.Controllers.Api
 {
@@ -26,10 +26,6 @@ namespace GigHub.Controllers.Api
                 .Select(un => un.Notification)
                 .Include(n => n.Gig.Artist)
                 .ToList();
-
-            Mapper.CreateMap<ApplicationUser, UserDto>();
-            Mapper.CreateMap<Gig, GigDto>();
-            Mapper.CreateMap<Notification, NotificationDto>();
 
             return notifications.Select(Mapper.Map<Notification, NotificationDto>);
         }
